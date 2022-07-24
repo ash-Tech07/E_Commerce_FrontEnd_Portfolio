@@ -1,0 +1,187 @@
+/* COMMON CSS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+    transition: all 0.2s ease;
+}
+
+/* NAVBAR */
+.navbar a{
+    color: #112D4E;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar input:focus{
+    outline: none;
+}
+.navbar{
+    padding: 5px 20px;
+    width: 100vw;
+    height: 65px;
+    background-color: #DBE2EF;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: #112D4E;
+}
+
+#navToggler{
+    display: none;
+}
+
+.logo{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.companyName{
+    margin-top: 15px;
+    padding-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.companyLogo{
+    border-radius: 25px;
+    height: 50px;
+    width: 50px;
+}
+
+#searchBarInp{
+    height: 40px;
+    width: 350px;
+    border-radius: 15px 0 0 15px;
+    border: 0;
+    padding: 15px;
+    font-size: 17px;
+}
+
+.searchIcon{
+    text-align: center;
+    border-radius: 0 15px 15px 0;
+    background-color: #fff;
+    height: 40px;
+    width: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.searchBar{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.searchBar2{
+    display: none;
+    flex-flow: row wrap;
+    height: 70px;
+    width: 100vw;
+    background-color: #DBE2EF;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchBar2 #searchBarInp{
+    height: 40px;
+    width: 350px;
+}
+
+.searchBar2 .searchIcon{
+    height: 40px;
+    width: 50px;
+}
+
+.menuBtn, .cartBtn{
+    border: 0;
+    cursor: pointer;
+    background-color: #DBE2EF;
+}
+
+.menuToggled{
+    margin: 0 0 20px auto;
+    background-color: #DBE2EF;
+    opacity: 0;
+    height: 240px;
+    width: 400px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 15px;
+    border-radius: 0 0 0 10px;
+}
+
+.menuToggled a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #112D4E;
+}
+
+.menuToggled a:hover, .navbar a:hover, .cartBtn:hover{
+    color: #3F72AF;
+}
+
+.menuDivider{
+    width: 300px;
+    border-top: 1px solid #112D4E;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 1050px){
+    .navbar a{
+        font-size: 14px;
+    }
+
+    #searchBarInp{
+        height: 26px;
+        width: 280px;
+    }
+
+    .searchIcon{
+        height: 30px;
+    }
+
+    .companyName {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #searchBarInp {
+        height: 24px;
+        width: 180px;
+        }
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .searchBar2{
+        padding: 0 15px 15px;
+    }
+
+    .companyName {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .searchBar2 #searchBarInp {
+        width: 260px;
+    }
+
+    .companyName {
+        font-size: 16px;
+    }
+
+    .menuToggled{
+        width: 100vw;
+    }
+}
+
