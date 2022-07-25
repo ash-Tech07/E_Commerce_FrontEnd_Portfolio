@@ -22,7 +22,9 @@ window.addEventListener("load", function () {
         document.getElementById("cartID").style.display = "none";
         document.getElementById("ordersAndReturnsID").style.display = "none";
         document.getElementById("accountID").style.display = "none";
-        document.getElementById("navToggler").style.display = "block";        
+        document.getElementById("navToggler").style.display = "block"; 
+        
+        document.getElementById("topicsBarID").style.display = "none";
     }
     if (screen.width < 600) { 
         document.getElementById("searchBarID").style.display = "none";
@@ -45,11 +47,15 @@ window.addEventListener("resize", function () {
         document.getElementById("ordersAndReturnsID").style.display = "none";
         document.getElementById("accountID").style.display = "none";
         document.getElementById("navToggler").style.display = "block";
+
+        document.getElementById("topicsBarID").style.display = "none";
     } else {
         document.getElementById("navToggler").style.display = "none";
         document.getElementById("accountID").style.display = "block";
         document.getElementById("ordersAndReturnsID").style.display = "block";
         document.getElementById("cartID").style.display = "block";
+
+        document.getElementById("topicsBarID").style.display = "flex";
     }
     
     if (screen.width < 600) {

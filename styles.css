@@ -53,7 +53,7 @@
 
 #searchBarInp{
     height: 40px;
-    width: 350px;
+    width: 400px;
     border-radius: 15px 0 0 15px;
     border: 0;
     padding: 15px;
@@ -118,14 +118,19 @@
     border-radius: 0 0 0 10px;
 }
 
-.menuToggled a{
+.menuToggled a, .topicsBar a{
     text-decoration: none;
     font-size: 15px;
     color: #112D4E;
 }
 
-.menuToggled a:hover, .navbar a:hover, .cartBtn:hover{
+.menuToggled a, .navbar a, .cartBtn, .topicsBar a {
+    padding: 10px;
+}
+
+.menuToggled a:hover, .navbar a:hover, .cartBtn:hover, .topicsBar a:hover{
     color: #3F72AF;
+    padding: 20px;
 }
 
 .menuDivider{
@@ -153,21 +158,33 @@
     }
 }
 
+@media only screen and (max-width: 992px) {
+    .navbar{
+        box-shadow: 0 10px 10px -10px #112D4E;
+    }
+}
+
 @media only screen and (max-width: 700px) {
     #searchBarInp {
         height: 24px;
         width: 180px;
-        }
+    }
+    .navbar {
+        box-shadow: 0 10px 10px -10px #112D4E;
+    }
 }
 
 @media only screen and (max-width: 600px) {
-    
     .searchBar2{
         padding: 0 15px 15px;
     }
 
     .companyName {
         font-size: 18px;
+    }
+
+    .searchBar2 {
+        box-shadow: 0 10px 10px -10px #112D4E;
     }
 }
 
@@ -182,6 +199,29 @@
 
     .menuToggled{
         width: 100vw;
+    }
+
+    .searchBar2 {
+        box-shadow: 0 10px 10px -10px #112D4E;
+    }
+}
+
+/* Topics Bar */
+.topicsBar{
+    width: 100vw;
+    padding: 0 20px;
+    height: 50px;
+    background-color: #DBE2EF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 10px 10px -10px #112D4E;
+}
+
+@media only screen and (max-width: 1300px) {
+    .topicsBar a{
+        font-size: 13px;
     }
 }
 
