@@ -116,6 +116,7 @@
     align-items: center;
     font-size: 15px;
     border-radius: 0 0 0 10px;
+    box-shadow: 0 10px 10px -10px #112D4E, inset 5px 0 10px -10px #112D4E;
 }
 
 .menuToggled a, .topicsBar a{
