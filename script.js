@@ -4,10 +4,14 @@ document.getElementById("menuBtnID").addEventListener("click", function () {
         document.getElementById("menuIcon").classList.remove("fa-bars");
         document.getElementById("menuIcon").classList.add("fa-circle-xmark");
         document.getElementById("menuToggledID").style.opacity = "1";
+        document.getElementById("menuToggledID").style.zIndex = "2";
+
     } else { 
         document.getElementById("menuIcon").classList.remove("fa-circle-xmark");
         document.getElementById("menuIcon").classList.add("fa-bars");
         document.getElementById("menuToggledID").style.opacity = "0";
+        document.getElementById("menuToggledID").style.zIndex = "0";
+
     }
 });
 
@@ -66,4 +70,24 @@ window.addEventListener("resize", function () {
         document.getElementById("searchBarID").style.display = "flex";
     }
 });
+
+
+
+// Carousel changing script
+var imgNum = 1;
+document.getElementById("leftArrowID").addEventListener("click", function () {
+    imgNum = imgNum > 1 ? imgNum - 1 : 4;
+    document.getElementById("offersCarouselID").style.backgroundImage = "url(ama" + imgNum + ".jpg)";
+    console.log(imgNum);
+});
+
+function nextImage() { 
+    imgNum = imgNum < 4 ? imgNum + 1 : 1;
+    document.getElementById("offersCarouselID").style.backgroundImage = "url(ama" + imgNum + ".jpg)";
+    console.log(imgNum);
+}
+
+document.getElementById("rightArrowID").addEventListener("click", nextImage);
+
+setInterval(nextImage, 10000);
 

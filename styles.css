@@ -7,6 +7,13 @@
     transition: all 0.2s ease;
 }
 
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    position: relative;
+}
+
 /* NAVBAR */
 .navbar a{
     color: #112D4E;
@@ -18,7 +25,7 @@
     outline: none;
 }
 .navbar{
-    padding: 5px 20px;
+    padding: 5px 30px 5px 20px;
     width: 100vw;
     height: 65px;
     background-color: #DBE2EF;
@@ -56,7 +63,7 @@
     width: 400px;
     border-radius: 15px 0 0 15px;
     border: 0;
-    padding: 15px;
+    padding: 20px;
     font-size: 17px;
 }
 
@@ -107,10 +114,14 @@
 .menuToggled{
     margin: 0 0 20px auto;
     background-color: #DBE2EF;
+    position: absolute;
+    right:  0;
+    top: 65px;
     opacity: 0;
     height: 240px;
     width: 400px;
     display: flex;
+    z-index: 0;
     flex-flow: column nowrap;
     justify-content: space-around;
     align-items: center;
@@ -146,12 +157,11 @@
     }
 
     #searchBarInp{
-        height: 26px;
         width: 280px;
     }
 
     .searchIcon{
-        height: 30px;
+        height: 40px;
     }
 
     .companyName {
@@ -186,6 +196,10 @@
 
     .searchBar2 {
         box-shadow: 0 10px 10px -10px #112D4E;
+    }
+
+    .menuToggled{
+        top:  135px;
     }
 }
 
@@ -226,3 +240,78 @@
     }
 }
 
+
+/* Offer Carousel */
+.offersCarousel{
+    /* margin: 0 auto; */
+    max-width: 100%;
+    height: 600px;
+    width: 100vw;
+    position: relative;
+    z-index: 1;
+    background-image: url("ama1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftArrow{
+    margin-left: 30px;
+    padding: 100px 20px;
+    cursor: pointer;
+}
+
+.rightArrow{
+    margin-right: 40px;
+    padding: 100px 20px;
+    cursor: pointer;
+}
+
+.rightArrow:hover, .leftArrow:hover{
+    border: 2px solid #000;
+}
+
+@media only screen and (max-width: 1000px) {
+    .leftArrow{
+        margin-left: 15px;
+    }
+
+    .rightArrow{
+        margin-right: 20px;
+    }
+
+    .offersCarousel{
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .leftArrow {
+        margin-left: 10px;
+    }
+
+    .rightArrow {
+        margin-right: 15px;
+    }
+
+    .offersCarousel {
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .leftArrow {
+        margin-left: 7px;
+    }
+
+    .rightArrow {
+        margin-right: 12px;
+    }
+
+    .offersCarousel {
+        height: 200px;
+    }
+}
