@@ -338,9 +338,11 @@ body{
 
 /* Containers & Items */
 .containers{
-    /* background-color: aqua; */
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
     position: absolute;
     top: 530px;
     z-index: 1;
@@ -368,13 +370,18 @@ body{
     padding: 0 22px;
 }
 
-.container1 .item-image1, .container1 .item-image2,.container1 .item-image3,.container1 .item-image4{
+.container1 .item-image1, .container1 .item-image2,.container1 .item-image3,.container1 .item-image4,
+.container3 .item-image1,
+.container3 .item-image2,
+.container3 .item-image3,
+.container3 .item-image4{
     height: 150px;
     width: 150px;
     margin: 20px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    cursor: pointer;
 }
 
 .container2 .item-image1{
@@ -406,6 +413,22 @@ body{
     background-image: url(discounts.jpg);
 }
 
+.container3 .item-image1 {
+    background-image: url(fresh.png);
+}
+
+.container3 .item-image2 {
+    background-image: url(electronics.jpg);
+}
+
+.container3 .item-image3 {
+    background-image: url(mobile.jpg);
+}
+
+.container3 .item-image4 {
+    background-image: url(fashion.jpg);
+}
+
 .items{
     display: flex;
     flex-direction: row;
@@ -418,4 +441,5 @@ body{
 .item-text{
     font-size: 14px;
     margin-left: 20px;
+    cursor: pointer;
 }
