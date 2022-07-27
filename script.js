@@ -77,13 +77,13 @@ window.addEventListener("resize", function () {
 var imgNum = 1;
 document.getElementById("leftArrowID").addEventListener("click", function () {
     imgNum = imgNum > 1 ? imgNum - 1 : 4;
-    document.getElementById("offersCarouselID").style.backgroundImage = "url(ama" + imgNum + ".jpg)";
+    document.getElementById("offersCarouselID").style.backgroundImage = "url(images/ama" + imgNum + ".jpg)";
     console.log(imgNum);
 });
 
 function nextImage() { 
     imgNum = imgNum < 4 ? imgNum + 1 : 1;
-    document.getElementById("offersCarouselID").style.backgroundImage = "url(ama" + imgNum + ".jpg)";
+    document.getElementById("offersCarouselID").style.backgroundImage = "url(images/ama" + imgNum + ".jpg)";
     console.log(imgNum);
 }
 

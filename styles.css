@@ -266,7 +266,7 @@ body{
     position: absolute;
     top: 115px;
     z-index: 1;
-    background-image: url("ama1.jpg");
+    background-image: url("images/ama1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -394,39 +394,39 @@ body{
 }
 
 .container1 .item-image1{
-    background-image: url(washingMachine.jpg);    
+    background-image: url(images/washingMachine.jpg);    
 }
 
 .container1 .item-image2 {
-    background-image: url(fans.jpg);
+    background-image: url(images/fans.jpg);
 }
 
 .container1 .item-image3 {
-    background-image: url(homeSecurity.jpg);
+    background-image: url(images/homeSecurity.jpg);
 }
 
 .container1 .item-image4 {
-    background-image: url(refrigerator.jpg);
+    background-image: url(images/refrigerator.jpg);
 }
 
 .container2 .item-image1 {
-    background-image: url(discounts.jpg);
+    background-image: url(images/discounts.jpg);
 }
 
 .container3 .item-image1 {
-    background-image: url(fresh.png);
+    background-image: url(images/fresh.png);
 }
 
 .container3 .item-image2 {
-    background-image: url(electronics.jpg);
+    background-image: url(images/electronics.jpg);
 }
 
 .container3 .item-image3 {
-    background-image: url(mobile.jpg);
+    background-image: url(images/mobile.jpg);
 }
 
 .container3 .item-image4 {
-    background-image: url(fashion.jpg);
+    background-image: url(images/fashion.jpg);
 }
 
 .items{
