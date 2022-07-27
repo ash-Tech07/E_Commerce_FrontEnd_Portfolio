@@ -10,8 +10,8 @@
 body{
     padding: 0;
     margin: 0;
-    overflow-x: hidden;
     position: relative;
+    overflow-x: hidden;
 }
 
 /* NAVBAR */
@@ -261,8 +261,6 @@ body{
 
 /* Offer Carousel */
 .offersCarousel{
-    /* margin: 0 auto; */
-    max-width: 100%;
     height: 600px;
     width: 100vw;
     position: absolute;
@@ -335,4 +333,89 @@ body{
     .offersCarousel {
         height: 200px;
     }
+}
+
+
+/* Containers & Items */
+.containers{
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 530px;
+    z-index: 1;
+    width: 100vw;
+    padding: 20px;
+}
+
+.container1, .container2, .container3, .container4{   
+    display: flex;
+    flex-direction: column;
+    background-color: #DBE2EF;
+    height: 500px;
+    width: 390px;
+    margin: 0 20px;
+}
+
+.cont-heading{
+    padding: 15px 20px 0 22px;
+}
+
+.cont-link a{
+    text-decoration: none;
+    font-size: 13px;
+    color: #112D4E;
+    padding: 0 22px;
+}
+
+.container1 .item-image1, .container1 .item-image2,.container1 .item-image3,.container1 .item-image4{
+    height: 150px;
+    width: 150px;
+    margin: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container2 .item-image1{
+    height: 395px;
+    width: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 20px;
+}
+
+.container1 .item-image1{
+    background-image: url(washingMachine.jpg);    
+}
+
+.container1 .item-image2 {
+    background-image: url(fans.jpg);
+}
+
+.container1 .item-image3 {
+    background-image: url(homeSecurity.jpg);
+}
+
+.container1 .item-image4 {
+    background-image: url(refrigerator.jpg);
+}
+
+.container2 .item-image1 {
+    background-image: url(discounts.jpg);
+}
+
+.items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.item-text{
+    font-size: 14px;
+    margin-left: 20px;
 }
