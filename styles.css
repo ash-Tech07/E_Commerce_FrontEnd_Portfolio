@@ -347,7 +347,7 @@ body{
     top: 530px;
     z-index: 1;
     width: 100vw;
-    padding: 20px;
+    padding: 0 20px;
 }
 
 .container1, .container2, .container3, .container4{   
@@ -356,7 +356,7 @@ body{
     background-color: #DBE2EF;
     height: 500px;
     width: 390px;
-    margin: 0 20px;
+    margin: 0 20px 20px;
 }
 
 .cont-heading{
@@ -367,7 +367,7 @@ body{
     text-decoration: none;
     font-size: 13px;
     color: #112D4E;
-    padding: 0 22px;
+    padding: 22px;
 }
 
 .container1 .item-image1, .container1 .item-image2,.container1 .item-image3,.container1 .item-image4,
@@ -442,4 +442,44 @@ body{
     font-size: 14px;
     margin-left: 20px;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) {
+    .containers {
+            padding: 0;
+            top: 335px;
+    }
+
+    .container1, .container2, .container3, .container4 {
+        width: 100vw;
+        margin: 0 0 20px;
+        text-align: center;
+        height: 620px;
+    }
+
+    .container1 .item-image1,
+    .container1 .item-image2,
+    .container1 .item-image3,
+    .container1 .item-image4,
+    .container3 .item-image1,
+    .container3 .item-image2,
+    .container3 .item-image3,
+    .container3 .item-image4 {
+        width: 200px;
+        height: 200px;
+    }
+
+    .container2 .item-image1 {
+        height: 500px;
+        width: 420px;
+    }
+
+    .cont-heading{
+        font-size: 20px;
+    }
+
+    .item-text, .cont-link a{
+        font-size: 17px;
+    }
+
 }
