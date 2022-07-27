@@ -34,6 +34,8 @@ body{
     justify-content: space-between;
     align-items: center;
     color: #112D4E;
+    position: absolute;
+    z-index: 2;
 }
 
 #navToggler{
@@ -93,6 +95,8 @@ body{
     background-color: #DBE2EF;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    z-index: 2;
 }
 
 .searchBar2 #searchBarInp{
@@ -121,7 +125,7 @@ body{
     height: 240px;
     width: 400px;
     display: flex;
-    z-index: 0;
+    z-index: -1;
     flex-flow: column nowrap;
     justify-content: space-around;
     align-items: center;
@@ -188,6 +192,7 @@ body{
 @media only screen and (max-width: 600px) {
     .searchBar2{
         padding: 0 15px 15px;
+        top: 65px;
     }
 
     .companyName {
@@ -221,6 +226,16 @@ body{
     }
 }
 
+@media only screen and (max-width: 400px) {
+    .searchBar2 #searchBarInp {
+        width: 200px;
+    }
+
+    .companyName {
+        font-size: 14px;
+    }
+}
+
 /* Topics Bar */
 .topicsBar{
     width: 100vw;
@@ -232,6 +247,9 @@ body{
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 10px 10px -10px #112D4E;
+    position: absolute;
+    z-index: 2;
+    top: 65px;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -247,7 +265,8 @@ body{
     max-width: 100%;
     height: 600px;
     width: 100vw;
-    position: relative;
+    position: absolute;
+    top: 115px;
     z-index: 1;
     background-image: url("ama1.jpg");
     background-position: center;
@@ -284,6 +303,7 @@ body{
     }
 
     .offersCarousel{
+        top: 60px;
         height: 400px;
     }
 }
@@ -299,6 +319,7 @@ body{
 
     .offersCarousel {
         height: 300px;
+        top: 135px;
     }
 }
 
