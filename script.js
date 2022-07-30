@@ -84,10 +84,95 @@ document.getElementById("leftArrowID").addEventListener("click", function () {
 function nextImage() { 
     imgNum = imgNum < 4 ? imgNum + 1 : 1;
     document.getElementById("offersCarouselID").style.backgroundImage = "url(images/ama" + imgNum + ".jpg)";
-    console.log(imgNum);
 }
 
 document.getElementById("rightArrowID").addEventListener("click", nextImage);
 
 setInterval(nextImage, 10000);
 
+
+//Top Deals menu
+var shift = 0;
+document.getElementById("leftScrollID").addEventListener("click", function () { 
+    if (shift < 0) {
+        shift += 340;
+        var cols = document.getElementsByClassName("item");
+        for (let i in cols) {
+            cols[i].style.transform = "translateX(" + shift + "px)";
+        }
+    }
+});
+
+document.getElementById("rightScrollID").addEventListener("click", function () {
+    if (shift > 7 * -340) {
+        shift -= 340;
+        var cols = document.getElementsByClassName("item");
+        for (let i in cols) {
+            cols[i].style.transform = "translateX(" + shift + "px)";
+        }
+    }
+});
+
+//Random Time Countdown Generation script
+function randTimeGen() {
+    var randHour = Math.floor(Math.random() * 24).toString(10);
+    randHour = randHour.length == 1 ? "0" + randHour : randHour;
+
+    var randMin = Math.floor(Math.random() * 60).toString(10);
+    randMin = randMin.length == 1 ? "0" + randMin : randMin;
+
+    var randSec = Math.floor(Math.random() * 60).toString(10);
+    randSec = randSec.length == 1 ? "0" + randSec : randSec;
+
+    var randTime = randHour + ":" + randMin + ":" + randSec;
+
+    return randTime;
+
+}
+
+window.addEventListener("load", function () { 
+    let spanNode = document.querySelectorAll("span.countdown");
+    console.log();
+    for (let i = 0; i < spanNode.length; i++) {
+        spanNode[i].textContent = randTimeGen();
+    }
+    setInterval(updateOfferTime, 1000);
+});
+
+function updateOfferTime() { 
+    let spanNode1 = document.querySelectorAll("span.countdown");
+    for (let i = 0; i < spanNode1.length; i++) {
+        let oldTime = spanNode1[i].textContent;
+
+        let sec = oldTime.substring(oldTime.lastIndexOf(":") + 1);
+        let min = oldTime.substring(oldTime.indexOf(":")+1, oldTime.lastIndexOf(":"));
+        let hr = oldTime.substring(0, oldTime.indexOf(":"));
+
+        sec = parseInt(sec) - 1;
+        min = parseInt(min);
+        hr = parseInt(hr);
+        if (sec <= 0) { 
+            min -= 1;
+            sec = 59;
+        }
+        if (min <= 0) { 
+            hr -= 1;
+            min = 59;
+        }
+        let newTime = "";
+        if (hr == 0 && min == 0 && sec == 0) {
+            newTime = "Offer Expired";
+        } else { 
+            hr = hr.toString(10);
+            hr = hr.length == 1 ? "0" + hr : hr;
+            min = min.toString(10);
+            min = min.length == 1 ? "0" + min : min;
+            sec = sec.toString(10);
+            sec = sec.length == 1 ? "0" + sec : sec;
+
+            newTime = hr + ":" + min + ":" + sec;
+        }
+
+        spanNode1[i].textContent = newTime;
+    }
+}

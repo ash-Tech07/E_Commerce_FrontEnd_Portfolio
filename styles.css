@@ -550,6 +550,14 @@ body{
     .item-text {
         font-size: 16px;
     }
+
+    .cont1-item4{
+        margin-bottom: 0;
+    }
+
+    .container1, .container3 {
+        height: 1140px;
+    }
 }
 
 @media only screen and (max-width: 300px) {
@@ -569,7 +577,7 @@ body{
     }
 
     .container1, .container3{
-        height: 1130px;
+        height: 1126px;
     }
 
     .container2{
@@ -579,4 +587,134 @@ body{
     .cont1-item4 {
         margin-bottom: 0;
     }
+}
+
+/* ROW2 */
+.row2{
+    top: 1100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    position: relative;
+    z-index: 3;
+    width: 95vw;
+    height: 450px;
+    background-color: #DBE2EF;
+}
+
+.row-heading a{
+    text-align: left;
+    color: #112D4E;
+    text-decoration: none;
+    font-size: 23px;
+    padding: 0 20px;
+}
+
+.row-heading {
+    padding-top: 20px;
+    display: block;
+}
+
+.row-items{
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+}
+
+.item{
+    height: 350px;
+    width: 300px;
+    position: relative;
+    margin: 20px 20px 0;
+    display: inline-block;
+    background-color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.leftScroll, .rightScroll{
+    padding: 80px 20px;
+    font-size: 20px;
+    position: absolute;
+    z-index: 4;
+    top: 30%;
+}
+
+.leftScroll:hover, .rightScroll:hover {
+    border: 2px solid #000;
+    cursor: pointer;
+}
+
+.leftScroll{
+    left: 0;
+}
+
+.rightScroll{
+    right: 0;
+}
+
+.offer{
+    color: #fff;
+    font-size: 16px;
+    background-color: #3F72AF;
+    padding: 10px;
+    display: table;
+}
+
+.item.item1 {
+    background-image: url(images/td1.jpg);
+}
+
+.item.item2 {
+    background-image: url(images/td2.jpg);
+}
+
+.item.item3 {
+    background-image: url(images/td3.jpg);
+}
+
+.item.item4 {
+    background-image: url(images/td4.jpg);
+}
+
+.item.item5 {
+    background-image: url(images/td5.jpg);
+}
+
+.item.item6 {
+    background-image: url(images/td6.jpg);
+}
+
+.item.item7 {
+    background-image: url(images/td7.jpg);
+}
+
+.item.item8 {
+    background-image: url(images/td8.jpg);
+}
+
+.item.item9 {
+    background-image: url(images/td9.jpg);
+}
+
+.item.item10 {
+    background-image: url(images/td10.jpg);
+}
+
+.item.item11 {
+    background-image: url(images/td11.jpg);
+}
+
+.description{
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: #3F72AF;
+    bottom: 0;
+    display: table;
+    padding: 10px;
+    font-family: 'Merriweather', serif;
 }
