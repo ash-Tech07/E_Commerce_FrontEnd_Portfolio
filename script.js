@@ -92,10 +92,26 @@ setInterval(nextImage, 10000);
 
 
 //Top Deals menu
+
 var shift = 0;
-document.getElementById("leftScrollID").addEventListener("click", function () { 
+var shiftBandwith = 527;
+var screenWidth = screen.width;
+var defScreenWidth = 255;
+var mul = 7;
+
+while (screenWidth >= defScreenWidth) { 
+    shiftBandwith -= 15;
+    defScreenWidth += 100; 
+}
+
+if (screenWidth <= 355) { 
+    shiftBandwith = 350;
+    mul = 10;
+}
+
+document.getElementById("leftScrollID").addEventListener("click", function () {
     if (shift < 0) {
-        shift += 340;
+        shift += shiftBandwith;
         var cols = document.getElementsByClassName("item");
         for (let i in cols) {
             cols[i].style.transform = "translateX(" + shift + "px)";
@@ -104,14 +120,16 @@ document.getElementById("leftScrollID").addEventListener("click", function () {
 });
 
 document.getElementById("rightScrollID").addEventListener("click", function () {
-    if (shift > 7 * -340) {
-        shift -= 340;
+    if (shift > mul * (shiftBandwith*-1)) {
+        shift -= shiftBandwith;
+        console.log(shiftBandwith);
         var cols = document.getElementsByClassName("item");
         for (let i in cols) {
             cols[i].style.transform = "translateX(" + shift + "px)";
         }
     }
 });
+
 
 //Random Time Countdown Generation script
 function randTimeGen() {
@@ -172,7 +190,6 @@ function updateOfferTime() {
 
             newTime = hr + ":" + min + ":" + sec;
         }
-
         spanNode1[i].textContent = newTime;
     }
 }
