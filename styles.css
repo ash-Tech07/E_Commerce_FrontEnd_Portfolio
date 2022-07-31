@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: 'Merriweather', serif;
     transition: all 0.2s ease;
+    line-height: 1.5;
 }
 
 body{
@@ -354,9 +355,9 @@ body{
     display: flex;
     flex-direction: column;
     background-color: #DBE2EF;
-    height: 500px;
+    height: 510px;
     width: 390px;
-    margin: 0 20px 20px;
+    margin: 0 20px 30px;
 }
 
 .cont-heading{
@@ -599,6 +600,7 @@ body{
     width: 95vw;
     height: 450px;
     background-color: #DBE2EF;
+    margin-bottom: 30px;
 }
 
 .row-heading a{
@@ -718,3 +720,88 @@ body{
     padding: 10px;
     font-family: 'Merriweather', serif;
 }
+
+@media only screen and (max-width: 1350px) {
+    .row2{
+        top: 1600px;
+    }
+}
+
+/* Container ROW3 */
+.containers.row3{
+    top: 1620px;
+}
+
+.containers.row3 .container1 .item-image1 {
+    background-image: url(images/row3_1.jpg);
+}
+
+.containers.row3 .container1 .item-image2 {
+    background-image: url(images/row3_2.jpg);
+}
+
+.containers.row3 .container1 .item-image3 {
+    background-image: url(images/row3_3.jpg);
+}
+
+.containers.row3 .container1 .item-image4 {
+    background-image: url(images/row3_4.jpg);
+}
+
+.containers.row3 .container3 .item-image1 {
+    background-image: url(images/row3_9.jpg);
+}
+
+.containers.row3 .container3 .item-image2 {
+    background-image: url(images/row3_10.jpg);
+}
+
+.containers.row3 .container3 .item-image3 {
+    background-image: url(images/row3_11.jpg);
+}
+
+.containers.row3 .container3 .item-image4 {
+    background-image: url(images/row3_12.jpg);
+}
+
+.containers.row3 .container2 .item-image1 {
+    background-image: url(images/row3_big.jpg);
+}
+
+.containers.row3 .container1, .containers.row3 .container2, .containers.row3 .container3{
+    height: 550px;
+}
+
+@media only screen and (max-width: 1350px) {
+    .containers.row3 {
+        top: 2080px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .containers.row1 {
+        top: 500px;
+    }
+
+    .row2{
+        top: 2130px;
+    }
+
+    .containers.row3{
+        top: 2620px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .containers.row1{
+        top: 400px;
+    }
+    .row2 {
+        top: 3300px;
+    }
+
+    .containers.row3 {
+        top: 3800px;
+    }
+}
+
