@@ -53,6 +53,7 @@ body{
     padding-left: 10px;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .companyLogo{
@@ -147,7 +148,7 @@ body{
 
 .menuToggled a:hover, .navbar a:hover, .cartBtn:hover, .topicsBar a:hover{
     color: #3F72AF;
-    padding: 20px;
+    padding: 0 20px;
 }
 
 .menuDivider{
@@ -920,6 +921,232 @@ body{
 @media only screen and (max-width: 300px) {
     .containers.row3 .container2{
         height: 370px;
+    }
+}
+
+.footerLinks{
+    margin-top: 1800px;
+    height: 250px;
+    width: 100vw;
+    background-color: #DBE2EF;
+    color: #fff;
+    position: relative;
+}
+
+.footerElement{
+    margin-top: 30px;
+    position: absolute;
+    top: 0;
+    /* border: 1px solid black; */
+    padding: 20px;
+    display: inline-block;
+}
+
+.footerHeading{
+    padding: 5px;
+    font-size: 17px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.footerElementLeft{
+    left: 20%;
+    transform: translate(-20%, 0);
+}
+
+.footerElementMiddle {
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.footerElementRight {
+    right: 20%;
+    transform: translate(20%, 0);
+}
+
+.footerLink{
+    cursor: pointer;
+    padding: 5px;
+    font-size: 14px;
+    color: #3F72AF;
+}
+
+.footer{
+    position: relative;
+    width: 100vw;
+    height: 50px;
+    padding: 20px;
+    background-color: #DBE2EF;
+}
+
+.trademarks{
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 14px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+@media only screen and (max-width: 1350px) {
+    .footerLinks, .footer{
+        top: 480px;
+    }
+}
+
+@media only screen and (max-width: 1330px) {
+    .footerLinks, .footer {
+        top: 1050px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .footerLinks, .footer {
+        top: 2150px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .footerElementLeft{
+        left: 15%;
+        transform: translate(-15%, 0);
+    }
+
+    .footerElementRight{
+        right: 15%;
+        transform: translate(15%, 0);
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .footerElementLeft {
+        left: 10%;
+        transform: translate(-10%, 0);
+    }
+
+    .footerElementRight {
+        right: 10%;
+        transform: translate(10%, 0);
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .footerElementLeft {
+        left: 5%;
+        transform: translate(-5%, 0);
+    }
+
+    .footerElementRight {
+        right: 5%;
+        transform: translate(5%, 0);
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .footerElementLeft {
+        left: 5%;
+        transform: translate(-5%, 0);
+    }
+
+    .footerElementRight {
+        right: 5%;
+        transform: translate(5%, 0);
+    }
+
+    .trademarks{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .footerElementMiddle{
+        margin-top: 220px;
+    }
+
+    .footerLinks{
+        height: 430px;
+    }
+
+    .footer{
+        padding: 5px;
+        height: 30px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .footer{
+        text-align: center;
+        height: 40px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .footerElementRight{
+        left: 50%;
+        transform: translate(-50%, 0);
+        margin-top: 240px;
+        height: 193px;
+        width: 220px;
+    }
+
+    .footerElementLeft {
+        left: 50%;
+        transform: translate(-50%, 0);
+        height: 240px;
+        width: 220px;
+    }
+
+    .footerElementMiddle {
+        margin-top: 425px;
+        height: 190px;
+        width: 220px;
+    }
+
+    .footerLinks {
+        height: 940px;
+    }
+
+    .footerLinks{
+        height: 630px;
+    }
+
+    .trademarks{
+        margin-top: 10px;
+        font-size: 11px;
+    }
+
+    .footer{
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .footerLinks, .footer{
+        top: 2720px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .footerLinks, .footer {
+        top: 4720px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .footer {
+        height: 70px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .footerLinks, .footer {
+        top: 4380px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .footerLinks, .footer {
+        top: 4320px;
     }
 }
 
