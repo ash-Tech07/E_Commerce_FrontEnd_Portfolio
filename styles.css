@@ -13,11 +13,12 @@ body{
     margin: 0;
     position: relative;
     overflow-x: hidden;
+    background-color: #F7F7F7;
 }
 
 /* NAVBAR */
 .navbar a{
-    color: #112D4E;
+    color: #FFFFFF;
     text-decoration: none;
     font-size: 17px;
 }
@@ -29,12 +30,12 @@ body{
     padding: 5px 30px 5px 20px;
     width: 100vw;
     height: 65px;
-    background-color: #DBE2EF;
+    background-color: #333333;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    color: #112D4E;
+    color: #FFFFFF;
     position: absolute;
     z-index: 2;
 }
@@ -54,6 +55,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     cursor: pointer;
+    color: #FFFFFF;
 }
 
 .companyLogo{
@@ -73,8 +75,9 @@ body{
 
 .searchIcon{
     text-align: center;
+    color: #333333;
     border-radius: 0 15px 15px 0;
-    background-color: #fff;
+    background-color: #FFFFFF;
     height: 40px;
     width: 50px;
     display: flex;
@@ -94,7 +97,7 @@ body{
     flex-flow: row wrap;
     height: 70px;
     width: 100vw;
-    background-color: #DBE2EF;
+    background-color: #FFFFFF;
     justify-content: center;
     align-items: center;
     position: absolute;
@@ -114,12 +117,13 @@ body{
 .menuBtn, .cartBtn{
     border: 0;
     cursor: pointer;
-    background-color: #DBE2EF;
+    background-color: #333333;
+    color: #FFFFFF;
 }
 
 .menuToggled{
     margin: 0 0 20px auto;
-    background-color: #DBE2EF;
+    background-color: #333333;
     position: absolute;
     right:  0;
     top: 65px;
@@ -133,13 +137,13 @@ body{
     align-items: center;
     font-size: 15px;
     border-radius: 0 0 0 10px;
-    box-shadow: 0 10px 10px -10px #112D4E, inset 5px 0 10px -10px #112D4E;
+    box-shadow: 0 10px 10px -10px #333333, inset 5px 0 10px -10px #333333;
 }
 
 .menuToggled a, .topicsBar a{
     text-decoration: none;
     font-size: 15px;
-    color: #112D4E;
+    color: #FFFFFF;
 }
 
 .menuToggled a, .navbar a, .cartBtn, .topicsBar a {
@@ -147,13 +151,13 @@ body{
 }
 
 .menuToggled a:hover, .navbar a:hover, .cartBtn:hover, .topicsBar a:hover{
-    color: #3F72AF;
+    color: #E1F4F3;
     padding: 0 20px;
 }
 
 .menuDivider{
     width: 300px;
-    border-top: 1px solid #112D4E;
+    border-top: 1px solid #333333;
     border-radius: 10px;
 }
 
@@ -177,7 +181,7 @@ body{
 
 @media only screen and (max-width: 992px) {
     .navbar{
-        box-shadow: 0 10px 10px -10px #112D4E;
+        box-shadow: 0 10px 10px -10px #333333;
     }
 }
 
@@ -187,7 +191,7 @@ body{
         width: 180px;
     }
     .navbar {
-        box-shadow: 0 10px 10px -10px #112D4E;
+        box-shadow: 0 10px 10px -10px #333333;
     }
 }
 
@@ -202,7 +206,7 @@ body{
     }
 
     .searchBar2 {
-        box-shadow: 0 10px 10px -10px #112D4E;
+        box-shadow: 0 10px 10px -10px #333333;
     }
 
     .menuToggled{
@@ -224,7 +228,7 @@ body{
     }
 
     .searchBar2 {
-        box-shadow: 0 10px 10px -10px #112D4E;
+        box-shadow: 0 10px 10px -10px #333333;
     }
 }
 
@@ -243,12 +247,12 @@ body{
     width: 100vw;
     padding: 0 20px;
     height: 50px;
-    background-color: #DBE2EF;
+    background-color: #333333;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 10px 10px -10px #112D4E;
+    box-shadow: 0 10px 10px -10px #333333;
     position: absolute;
     z-index: 2;
     top: 65px;
@@ -290,7 +294,7 @@ body{
 }
 
 .rightArrow:hover, .leftArrow:hover{
-    border: 2px solid #000;
+    border: 2px solid #333333;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -359,21 +363,29 @@ body{
 .container1, .container2, .container3, .container4{   
     display: flex;
     flex-direction: column;
-    background-color: #DBE2EF;
+    background-color: #333333;
     height: 510px;
     width: 390px;
+    border: 1px solid #333333;
+    border-radius: 1%;
     margin: 0 20px 30px;
 }
 
 .cont-heading{
+    color: #FFFFFF;
     padding: 15px 20px 0 22px;
 }
 
 .cont-link a{
     text-decoration: none;
     font-size: 13px;
-    color: #112D4E;
+    color: #FFFFFF;
     padding: 22px;
+}
+
+.cont-link a:hover{
+    color: #E1F4F3;
+    font-size: 14px;
 }
 
 .container1 .item-image1, .container1 .item-image2,.container1 .item-image3,.container1 .item-image4,
@@ -448,6 +460,7 @@ body{
     font-size: 14px;
     margin-left: 20px;
     cursor: pointer;
+    color: #FFFFFF;
 }
 
 @media only screen and (max-width: 500px) {
@@ -611,21 +624,22 @@ body{
     position: relative;
     z-index: 3;
     width: 95vw;
-    height: 450px;
-    background-color: #DBE2EF;
+    height: 470px;
     margin-bottom: 30px;
+    background-color: #333333;
 }
 
 .row-heading a{
     text-align: left;
-    color: #112D4E;
+    color: #FFFFFF;
     text-decoration: none;
     font-size: 23px;
     padding: 0 20px;
+    margin-bottom: 10px;
 }
 
 .row-heading {
-    padding-top: 20px;
+    padding: 15px 0;
     display: block;
 }
 
@@ -633,15 +647,16 @@ body{
     white-space: nowrap;
     overflow: hidden;
     display: block;
+    background-color: #F7F7F7;
 }
 
 .item{
     height: 350px;
     width: 300px;
     position: relative;
-    margin: 20px 20px 0;
+    margin: 20px 20px 10px;
     display: inline-block;
-    background-color: #fff;
+    background-color: #333333;
     background-position: center;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -656,7 +671,7 @@ body{
 }
 
 .leftScroll:hover, .rightScroll:hover {
-    border: 2px solid #000;
+    border: 2px solid #333333;
     cursor: pointer;
 }
 
@@ -669,65 +684,76 @@ body{
 }
 
 .offer{
-    color: #fff;
+    color: #FFFFFF;
     font-size: 16px;
-    background-color: #3F72AF;
+    background-color: #333333;
     padding: 10px;
     display: table;
 }
 
 .item.item1 {
     background-image: url(images/td1.jpg);
+    background-color: #FFFFFF;
 }
 
 .item.item2 {
     background-image: url(images/td2.jpg);
+    background-color: #FFFFFF;
 }
 
 .item.item3 {
     background-image: url(images/td3.jpg);
+    background-color: #FFFFFF;
 }
 
 .item.item4 {
     background-image: url(images/td4.jpg);
+    background-color: #FFFFFF;
 }
 
 .item.item5 {
     background-image: url(images/td5.jpg);
+    background-color: #FFFFFF;
 }
 
 .item.item6 {
     background-image: url(images/td6.jpg);
+    background-color: #FFFFFF;
 }
 
 .item.item7 {
     background-image: url(images/td7.jpg);
+    background-color: #FFFFFF;
 }
 
 .item.item8 {
+    background-color: #FFFFFF;
     background-image: url(images/td8.jpg);
 }
 
 .item.item9 {
     background-image: url(images/td9.jpg);
+    background-color: #FFFFFF;
 }
 
 .item.item10 {
     background-image: url(images/td10.jpg);
+    background-color: #FFFFFF;
 }
 
 .item.item11 {
     background-image: url(images/td11.jpg);
+    background-color: #FFFFFF;
 }
 
 .description{
     text-align: center;
-    color: #fff;
+    color: #FFFFFF;
     font-size: 12px;
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
-    background-color: #3F72AF;
+    background-color: #333333;
     bottom: 0;
     display: table;
     padding: 10px;
@@ -928,8 +954,8 @@ body{
     margin-top: 1800px;
     height: 250px;
     width: 100vw;
-    background-color: #DBE2EF;
-    color: #fff;
+    background-color: #333333;
+    color: #FFFFFF;
     position: relative;
 }
 
@@ -937,7 +963,6 @@ body{
     margin-top: 30px;
     position: absolute;
     top: 0;
-    /* border: 1px solid black; */
     padding: 20px;
     display: inline-block;
 }
@@ -946,7 +971,7 @@ body{
     padding: 5px;
     font-size: 17px;
     margin-bottom: 10px;
-    color: #000;
+    color: #FFFFFF;
 }
 
 .footerElementLeft{
@@ -968,7 +993,12 @@ body{
     cursor: pointer;
     padding: 5px;
     font-size: 14px;
-    color: #3F72AF;
+    color: #FFFFFF;
+}
+
+.footerLink:hover {
+    color: #E1F4F3;
+    font-size: 14.5px;
 }
 
 .footer{
@@ -976,15 +1006,16 @@ body{
     width: 100vw;
     height: 50px;
     padding: 20px;
-    background-color: #DBE2EF;
+    background-color: #333333;
 }
 
 .trademarks{
     left: 50%;
     transform: translate(-50%, 0);
-    font-size: 14px;
+    font-size: 13px;
     position: absolute;
     left: 50%;
+    color: #FFFFFF;
     transform: translate(-50%, 0);
 }
 

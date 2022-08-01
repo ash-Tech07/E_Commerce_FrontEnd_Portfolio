@@ -72,7 +72,6 @@ window.addEventListener("resize", function () {
 });
 
 
-
 // Carousel changing script
 var imgNum = 1;
 document.getElementById("leftArrowID").addEventListener("click", function () {
