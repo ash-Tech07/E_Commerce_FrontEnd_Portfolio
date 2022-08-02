@@ -34,9 +34,11 @@ window.addEventListener("load", function () {
         document.getElementById("searchBarID").style.display = "none";
         document.getElementById("searchBar2ID").style.display = "flex";
     }
+    calcShift();
 });
 
 window.addEventListener("resize", function () { 
+    this.location.reload();
 
     if (screen.width < 1050) {
         document.getElementById("cartIcon").classList.remove("fa-2xl");
@@ -69,6 +71,7 @@ window.addEventListener("resize", function () {
         document.getElementById("searchBar2ID").style.display = "none";
         document.getElementById("searchBarID").style.display = "flex";
     }
+
 });
 
 
@@ -93,19 +96,32 @@ setInterval(nextImage, 10000);
 //Top Deals menu
 
 var shift = 0;
-var shiftBandwith = 527;
+var shiftBandwith = 345;
 var screenWidth = screen.width;
-var defScreenWidth = 255;
 var mul = 7;
 
-while (screenWidth >= defScreenWidth) { 
-    shiftBandwith -= 15;
-    defScreenWidth += 100; 
-}
+function calcShift() { 
+    var mediaPoints = [580, 650, 730, 800, 870, 950, 1000, 1080, 1160, 1200, 1250, 1350];
+    if (screenWidth < mediaPoints[0]) {
+        shiftBandwith += 120;
+    } else { 
+        for (let i in mediaPoints) {
+            if (screenWidth < mediaPoints[i]) { 
+                shiftBandwith += 10 * (12 - i);
+                break;
+            }
+        }
+    }
 
-if (screenWidth <= 355) { 
-    shiftBandwith = 350;
-    mul = 10;
+    if (screenWidth <= 500) { 
+        shiftBandwith = 335;
+        mul = 10;
+    }  
+
+    if (screenWidth <= 450) { 
+        shiftBandwith = 345;
+        mul = 10;
+    }
 }
 
 document.getElementById("leftScrollID").addEventListener("click", function () {
@@ -119,7 +135,7 @@ document.getElementById("leftScrollID").addEventListener("click", function () {
 });
 
 document.getElementById("rightScrollID").addEventListener("click", function () {
-    if (shift > mul * (shiftBandwith*-1)) {
+    if (shift > mul * (shiftBandwith*-1) ) {
         shift -= shiftBandwith;
         console.log(shiftBandwith);
         var cols = document.getElementsByClassName("item");
