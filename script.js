@@ -38,7 +38,7 @@ window.addEventListener("load", function () {
 });
 
 window.addEventListener("resize", function () { 
-    this.location.reload();
+    //this.location.reload();
 
     if (screen.width < 1050) {
         document.getElementById("cartIcon").classList.remove("fa-2xl");
